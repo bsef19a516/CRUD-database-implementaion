@@ -6,6 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="178dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:text="delete record"
+        app:layout_constraintEnd_toEndOf="@+id/buttonViewAll"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonViewAll"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewAll" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:text="update record"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDelete"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toTopOf="@+id/buttonDelete"
+        app:layout_constraintVertical_bias="1.0" />
+
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
@@ -48,16 +71,15 @@
     <Button
         android:id="@+id/buttonViewAll"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_height="48dp"
         android:text="@string/ButtonViewAll"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchStudent" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="138dp" />
 
     <Button
         android:id="@+id/buttonAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="30dp"
         android:text="@string/Add"
         app:layout_constraintBottom_toBottomOf="@+id/buttonViewAll"
@@ -69,9 +91,9 @@
         android:id="@+id/listViewStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="84dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
 
